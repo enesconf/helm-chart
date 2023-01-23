@@ -85,9 +85,6 @@ frontend:
 
 loadtest:
     replicas: 2
-    maxReplicas: 10
-    averageCPU: 500m
-    averageRelativeMemory: 50
     enabled: true
     image:
         repo: weaveworksdemos/load-test

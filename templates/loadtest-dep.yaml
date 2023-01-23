@@ -7,11 +7,6 @@ metadata:
     name: load-test
 spec:
   replicas: {{ .Values.loadtest.replicas }}
-  autoScaling:
-  horizontal:
-    maxReplicas: {{ .Values.loadtest.maxReplicas }}
-    averageCPU: {{ .Values.loadtest.averageCPU }}
-    averageRelativeMemory: {{ .Values.loadtest.averageRelativeMemory }}
   selector:
     matchLabels:
       name: load-test
